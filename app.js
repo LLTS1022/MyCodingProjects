@@ -5,3 +5,7 @@ document.querySelector("button").addEventListener("click", () =>{
     window.speechSynthesis.speak(speech);
     
 });
+
+document.getElementById("stopButton").addEventListener("click", () => {
+    window.speechSynthesis.cancel();
+})
